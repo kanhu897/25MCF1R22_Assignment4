@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REGISTRATION FORM </title>
+      
+        <style>
+            body {
+                background-color:rgb(128, 158, 247);
+            }
+        </style>
+        
+        
+    </head>
+    <body>
+        <form>
+        
+            <fieldset>
+                <h1>REGISTRATION FORM :</h1><br>
+                <fieldset>
+                <h2>PERSONAL DETAILS:</h2><br>
+                </fieldset>
+                <table>
+                    <tr>
+                <br>
+              <td>FIRST NAME:<input type="text"name="FIRST NAME"  ></td>
+                    </tr>
+                    <tr>
+               <td>LAST NAME :<input type="text"name="LAST NAME"></td>
+                    </tr>
+                    <tr>
+                        <td>email id :<input type="text"name="email id"></td>
+                    </tr>
+                    <tr><td>phone number :<input type="text"name="phone number"pattern="[0-9]{10}" maxlength="10"required></tr>
+                    </fieldset>
+</table>
+             
+                
+                
+                
+            
+            <table>
+                <fieldset>
+                <h3>ACCOUNT DETAILS</h3>
+                <tr><td>USER NAME :<input type="text"name="USER NAME"minlength="5"maxlength="15"pattern="[a-zA-Z0-9]+$"title="USER NAME must be alphanumeric characters required"></td></tr>
+                
+                <tr>
+                    <td><label for="password">Password:</label>
+                    
+                    <input type="password" id="password" name="password" 
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}"
+                           title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 8 or more characters"
+                           required></td></tr>
+                    
+                <br>
+               <tr> <form action="/submit_password.php" method="post">
+                   <td> <label for=" confirm password"> confirm Password:</label>
+                   
+                    <input type=" confirm password" id=" confirm password" name=" confirm password" 
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}"
+                           title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 8 or more characters"
+                           required>
+                    <input type="submit" value="Submit"></td></tr>
+                </form>
+            
+            <table>
+                <h3>ADRESS :</h3>
+                <br>
+                <tr>
+                <td>ADRESS LINE 1:<input type="text"name="ADRESS LINE 1"required></td>
+                </tr>
+                <tr><td>ADRESS LINE 2:<input type="text"name="ADRESS LINE 2"></td></tr>
+                <tr><td>CITY:<input type="text"name="CITY"></td></tr>
+                <tr><td for="state-select">State:
+<select id="state-select" name="state" required>
+  <option value="">--Please choose an option--</option>
+  <option value="AL">odisha</option>
+  <option value="AK">telengana</option>
+  <option value="AZ">delhi</option></td></tr>
+  
+</select>
+                <tr><td>ZIP CODE:<input type="text"name="ZIP CODE"></td></tr>
+                </table>
+                
+            
+            
+            </table>
+            <table>
+            
+                                    <h4>PREFERENCES :</h4><br>
+                
+                    <h3>gender :</h3>
+                    <tr>
+                        <td>male <input type="radio"name="gender"required></td>
+                    </tr>
+                    <tr><td>female<input type="radio"name="gender"required></td></tr>
+                    <tr>
+                       <td>other<input type="radio"name="gender"required></td>
+                    </tr>
+                    <tr><td>subscribe to newsletter:<input type="checkbox"name="subscribe to newsletter"><br>
+                        <h3>short bio</h3>
+                        <textarea rows="4" cols="50" maxlength="200">
+                            Enter text here...</textarea><br>
+
+                            <input type="reset" value="Reset">
+  <input type="register" value="register">
+            </table>
+            <table>
+<tr><td> agree to terms and condition<input type="checkbox"name=" agree to terms and condition"></td></tr>
+            </table>
+            <hr>
+            <table>
+                <h2>terms and condition</h2>
+                <div>
+                    <p>terms and condition
+                        <br>
+                        welcme to our registration portal.by registering,<br>you agree to the following terms and condition:
+                        <br>
+
+                    </p>
+                    <ul><li>you must provide accurate and complete information.</li></ul>
+                    <ul><li>your passward must be kept confidential.</li>
+                        <li>we reserve the right to cancel accounts that violate our polices.</li>
+                            <li>All data is processed according to our privecy pocicy</li>
+                            <li>use the form responsibly</li>
+                        
+                    </ul>
+                </div>
+                    
+                
+            
+                
+            </table>
+                
+            
+                </filedset>
+
+            </table>
+        </form>
+        
+    </body>
+</html>
